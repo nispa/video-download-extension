@@ -1,0 +1,36 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  padding: 8px 16px;
+  font:
+    14px/1.5 system-ui,
+    sans-serif;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+fieldset + fieldset {
+  margin-top: 16px;
+}
+
+legend {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin: 4px 0;
+}
+
+.hint {
+  margin-left: 22px;
+  font-size: 12px;
+  color: GrayText;
+}

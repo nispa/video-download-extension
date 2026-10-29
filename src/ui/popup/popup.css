@@ -1,0 +1,196 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f2937;
+  --muted: #6b7280;
+  --card: #f3f4f6;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --accent-fg: #ffffff;
+  --ok: #16a34a;
+  --error: #dc2626;
+  --hls: #7c3aed;
+  --dash: #6b7280;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1b22;
+    --fg: #f3f4f6;
+    --muted: #9ca3af;
+    --card: #2b2a33;
+    --border: #3f3e48;
+    --accent: #3b82f6;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 400px;
+  margin: 0;
+  padding: 12px;
+  font:
+    13px/1.4 system-ui,
+    sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  flex: 1;
+  margin: 0;
+  font-size: 15px;
+}
+
+h2 {
+  margin: 12px 0 6px;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.title .name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meta {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.meta.error {
+  color: var(--error);
+}
+
+.tag {
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+.tag.hls {
+  background: var(--hls);
+}
+
+.tag.dash {
+  background: var(--dash);
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+select {
+  flex: 1;
+  min-width: 0;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+button {
+  padding: 4px 10px;
+  border: 0;
+  border-radius: 6px;
+  font: inherit;
+  background: var(--accent);
+  color: var(--accent-fg);
+  cursor: pointer;
+}
+
+button.secondary {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg);
+}
+
+button.icon {
+  padding: 2px 8px;
+  font-size: 14px;
+}
+
+button.danger {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px 10px;
+  font-weight: 700;
+  background: var(--error);
+  color: #ffffff;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.progress {
+  height: 6px;
+  margin-top: 6px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--border);
+}
+
+.progress > div {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.2s;
+}
+
+.done .progress > div {
+  background: var(--ok);
+}
+
+.converting .progress > div {
+  background: var(--hls);
+}
+
+.empty {
+  margin: 4px 0;
+  color: var(--muted);
+}

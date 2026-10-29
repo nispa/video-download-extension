@@ -1,0 +1,3 @@
+allowBuilds:
+  # Pulled in by web-ext; its install script is not needed.
+  spawn-sync: false

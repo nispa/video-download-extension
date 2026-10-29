@@ -1,0 +1,8 @@
+<!doctype html>
+<title>Test page</title>
+<video src="/clip.mp4" muted></video>
+<script>
+  // Players fetch their manifests; the extension sees them on the network.
+  fetch("/hls/index.m3u8");
+  fetch("/dash/manifest.mpd");
+</script>

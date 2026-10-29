@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="options.css" />
+    <script type="module" src="options.js"></script>
+  </head>
+  <body>
+    <fieldset>
+      <legend data-i18n="optionsHlsTitle"></legend>
+      <label>
+        <input type="radio" name="hlsFormat" value="mp4" />
+        <span data-i18n="optionsHlsMp4"></span>
+      </label>
+      <div class="hint" data-i18n="optionsHlsMp4Hint"></div>
+      <label>
+        <input type="radio" name="hlsFormat" value="ts" />
+        <span data-i18n="optionsHlsTs"></span>
+      </label>
+      <div class="hint" data-i18n="optionsHlsTsHint"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend data-i18n="optionsDrmTitle"></legend>
+      <label>
+        <input type="checkbox" id="allowEncrypted" />
+        <span data-i18n="optionsDrmAllow"></span>
+      </label>
+      <div class="hint" data-i18n="optionsDrmHint"></div>
+    </fieldset>
+  </body>
+</html>

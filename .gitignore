@@ -1,0 +1,36 @@
+# Builds (recreated by: pnpm build)
+dist/
+web-ext-artifacts/
+*.zip
+*.xpi
+*.crx
+.git
+
+# Dependencies
+node_modules/
+
+# Test reports
+coverage/
+playwright-report/
+test-results/
+
+# Written by native-host/install.ps1: they contain paths of the local machine
+native-host/host.bat
+native-host/*.json
+
+# Logs and temporary files
+*.log
+*.tmp
+.env
+.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Operating systems
+Thumbs.db
+desktop.ini
+.DS_Store

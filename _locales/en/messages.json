@@ -1,0 +1,72 @@
+{
+  "extName": { "message": "Video Grabber" },
+  "extDescription": {
+    "message": "Finds and downloads videos embedded in web pages (direct files, HLS, DASH, yt-dlp)."
+  },
+  "settings": { "message": "Settings" },
+
+  "sectionYtdlp": { "message": "Whole page with yt-dlp" },
+  "ytdlpSites": { "message": "YouTube, Vimeo, Facebook and over a thousand other sites." },
+  "ytdlpReady": { "message": "yt-dlp $1 · saves to the Downloads folder" },
+  "ytdlpDrmWarning": { "message": "This page uses DRM: yt-dlp will refuse to download it." },
+  "formatBest": { "message": "Best quality (MP4)" },
+  "format1080": { "message": "Up to 1080p (MP4)" },
+  "format720": { "message": "Up to 720p (MP4)" },
+  "formatAudio": { "message": "Audio only (MP3)" },
+
+  "sectionPage": { "message": "Videos on this page" },
+  "emptyList": {
+    "message": "No video found. Start the video and open the panel again. If you just reloaded the extension, reload the page too (F5)."
+  },
+  "sectionJobs": { "message": "Downloads" },
+  "download": { "message": "Download" },
+  "copyUrl": { "message": "Copy URL" },
+  "copied": { "message": "Copied!" },
+  "cancel": { "message": "Cancel" },
+  "remove": { "message": "Remove" },
+  "drmDownload": { "message": "⚠ Download with DRM (encrypted file)" },
+  "drmEnable": { "message": "⚠ Enable DRM downloads in the settings" },
+  "drmBlocked": {
+    "message": "Protected by DRM: cannot be downloaded (can be enabled in ⚙ settings)"
+  },
+  "drmAllowed": { "message": "Protected by DRM: the file will be encrypted and unplayable" },
+  "unknownSize": { "message": "unknown size" },
+  "qualities": { "message": "$1 qualities" },
+  "separateAudio": { "message": "audio in a separate file" },
+  "live": { "message": "live (downloads the segments available now)" },
+  "unknownQuality": { "message": "Unknown quality" },
+
+  "status_downloading": { "message": "Downloading…" },
+  "status_converting": { "message": "Converting to MP4…" },
+  "status_saving": { "message": "Saving…" },
+  "status_handed": { "message": "Handed to the browser's downloads" },
+  "status_done": { "message": "Done" },
+  "status_error": { "message": "Error" },
+  "status_cancelled": { "message": "Cancelled" },
+
+  "error_drmProtected": { "message": "Protected by DRM: cannot be downloaded" },
+  "error_noSegments": { "message": "The stream has no segments" },
+  "error_unexpectedPlaylist": { "message": "Unexpected playlist" },
+  "error_qualityGone": { "message": "This quality is no longer in the manifest" },
+  "error_http": { "message": "The server refused the request" },
+  "error_saveInterrupted": { "message": "Saving was interrupted" },
+  "error_conversionFailed": { "message": "MP4 conversion failed, saved as .ts" },
+  "error_ytdlpMissing": { "message": "yt-dlp is not connected: run native-host/install.ps1" },
+  "error_ytdlpClosed": { "message": "yt-dlp closed unexpectedly" },
+  "error_ytdlpFailed": { "message": "yt-dlp failed" },
+  "error_itemNotFound": { "message": "This video is no longer on the page" },
+  "error_unexpected": { "message": "Unexpected error" },
+
+  "optionsHlsTitle": { "message": "Format of HLS videos (.ts)" },
+  "optionsHlsMp4": { "message": "MP4 (recommended)" },
+  "optionsHlsMp4Hint": {
+    "message": "Rearranges the stream into an .mp4 file that plays everywhere, without re-encoding or quality loss."
+  },
+  "optionsHlsTs": { "message": "Original TS" },
+  "optionsHlsTsHint": { "message": "Saves the segments as they come from the server." },
+  "optionsDrmTitle": { "message": "DRM-protected streams" },
+  "optionsDrmAllow": { "message": "Allow downloading them as they are" },
+  "optionsDrmHint": {
+    "message": "The file stays encrypted and cannot be played: only useful to test the downloader. The extension never decrypts protected content."
+  }
+}

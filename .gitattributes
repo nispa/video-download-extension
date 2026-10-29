@@ -1,0 +1,11 @@
+# Same line endings in the repository, whatever system a contributor uses.
+* text=auto eol=lf
+
+# Windows scripts: CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+
+# Binary files (.ts here are MPEG-TS video segments, not TypeScript)
+*.png binary
+*.ts binary
+*.m4s binary

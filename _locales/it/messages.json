@@ -1,0 +1,72 @@
+{
+  "extName": { "message": "Video Grabber" },
+  "extDescription": {
+    "message": "Rileva e scarica i video incorporati nelle pagine web (file diretti, HLS, DASH, yt-dlp)."
+  },
+  "settings": { "message": "Impostazioni" },
+
+  "sectionYtdlp": { "message": "Pagina intera con yt-dlp" },
+  "ytdlpSites": { "message": "YouTube, Vimeo, Facebook e oltre mille altri siti." },
+  "ytdlpReady": { "message": "yt-dlp $1 · salva nella cartella Download" },
+  "ytdlpDrmWarning": { "message": "Questa pagina usa DRM: yt-dlp rifiuterà il download." },
+  "formatBest": { "message": "Migliore qualità (MP4)" },
+  "format1080": { "message": "Massimo 1080p (MP4)" },
+  "format720": { "message": "Massimo 720p (MP4)" },
+  "formatAudio": { "message": "Solo audio (MP3)" },
+
+  "sectionPage": { "message": "Video in questa pagina" },
+  "emptyList": {
+    "message": "Nessun video rilevato. Avvia la riproduzione del video e riapri il pannello. Se hai appena ricaricato l'estensione, ricarica anche la pagina (F5)."
+  },
+  "sectionJobs": { "message": "Download" },
+  "download": { "message": "Scarica" },
+  "copyUrl": { "message": "Copia URL" },
+  "copied": { "message": "Copiato!" },
+  "cancel": { "message": "Annulla" },
+  "remove": { "message": "Rimuovi" },
+  "drmDownload": { "message": "⚠ Scarica con DRM (file cifrato)" },
+  "drmEnable": { "message": "⚠ Attiva il download con DRM nelle impostazioni" },
+  "drmBlocked": {
+    "message": "Protetto da DRM: non scaricabile (attivabile nelle impostazioni ⚙)"
+  },
+  "drmAllowed": { "message": "Protetto da DRM: il file sarà cifrato e non riproducibile" },
+  "unknownSize": { "message": "dimensione sconosciuta" },
+  "qualities": { "message": "$1 qualità" },
+  "separateAudio": { "message": "audio in file separato" },
+  "live": { "message": "diretta (scarica solo i segmenti disponibili)" },
+  "unknownQuality": { "message": "Qualità sconosciuta" },
+
+  "status_downloading": { "message": "Scaricamento…" },
+  "status_converting": { "message": "Conversione in MP4…" },
+  "status_saving": { "message": "Salvataggio…" },
+  "status_handed": { "message": "Passato ai download del browser" },
+  "status_done": { "message": "Completato" },
+  "status_error": { "message": "Errore" },
+  "status_cancelled": { "message": "Annullato" },
+
+  "error_drmProtected": { "message": "Protetto da DRM: non scaricabile" },
+  "error_noSegments": { "message": "Lo stream non ha segmenti" },
+  "error_unexpectedPlaylist": { "message": "Playlist inattesa" },
+  "error_qualityGone": { "message": "Questa qualità non è più nel manifest" },
+  "error_http": { "message": "Il server ha rifiutato la richiesta" },
+  "error_saveInterrupted": { "message": "Salvataggio interrotto" },
+  "error_conversionFailed": { "message": "Conversione MP4 non riuscita, salvato come .ts" },
+  "error_ytdlpMissing": { "message": "yt-dlp non collegato: esegui native-host/install.ps1" },
+  "error_ytdlpClosed": { "message": "yt-dlp si è chiuso inaspettatamente" },
+  "error_ytdlpFailed": { "message": "yt-dlp non è riuscito a scaricare" },
+  "error_itemNotFound": { "message": "Questo video non è più nella pagina" },
+  "error_unexpected": { "message": "Errore inatteso" },
+
+  "optionsHlsTitle": { "message": "Formato dei video HLS (.ts)" },
+  "optionsHlsMp4": { "message": "MP4 (consigliato)" },
+  "optionsHlsMp4Hint": {
+    "message": "Riorganizza il flusso in un file .mp4 compatibile ovunque, senza ricodifica né perdita di qualità."
+  },
+  "optionsHlsTs": { "message": "TS originale" },
+  "optionsHlsTsHint": { "message": "Salva i segmenti così come arrivano dal server." },
+  "optionsDrmTitle": { "message": "Stream protetti da DRM" },
+  "optionsDrmAllow": { "message": "Permetti di scaricarli così come sono" },
+  "optionsDrmHint": {
+    "message": "Il file resta cifrato e non si può riprodurre: utile solo per provare il downloader. L'estensione non decifra contenuti protetti."
+  }
+}

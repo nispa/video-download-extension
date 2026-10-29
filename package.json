@@ -1,0 +1,39 @@
+{
+  "name": "video-grabber",
+  "version": "0.2.0",
+  "description": "Browser extension for Firefox and Edge that finds and downloads videos embedded in web pages.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "nispa",
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@12.8.1",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start:firefox": "node scripts/build.js firefox && web-ext run -s dist/firefox",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "node scripts/build.js edge && playwright test",
+    "lint": "eslint . && web-ext lint --self-hosted -s dist/firefox",
+    "lint:code": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "mux.js": "6.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@vitest/coverage-v8": "^5.0.2",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "happy-dom": "^20.0.0",
+    "prettier": "^3.9.9",
+    "vitest": "^5.0.2",
+    "web-ext": "^9.0.0"
+  }
+}
